@@ -1,10 +1,9 @@
 import { combineReducers } from 'redux';
 import { reducer as formReducer} from 'redux-form';
-import PostsReducer from './reducer_posts';
+import ActiveTab from './reducer_active_tab';
 
 const rootReducer = combineReducers({
-	posts: PostsReducer,
-	form: formReducer
+	tab: ActiveTab,
 });
 
 export default rootReducer;
